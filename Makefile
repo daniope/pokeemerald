@@ -17,7 +17,7 @@ ifneq (,$(wildcard $(TOOLCHAIN)/base_tools))
 include $(TOOLCHAIN)/base_tools
 else
 export PATH := $(TOOLCHAIN)/bin:$(PATH)
-PREFIX := arm-none-eabi-
+PREFIX := arm-linux-gnueabi-
 OBJCOPY := $(PREFIX)objcopy
 export CC := $(PREFIX)gcc
 export AS := $(PREFIX)as
